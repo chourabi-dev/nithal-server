@@ -1,0 +1,54 @@
+add job 
+
+mutation{
+	JobCreateOne(record:{ 
+      title: "Stage intégrateur / développeur web",
+    description: "Au sein d’une agence web en plein développement et dans une ambiance startup-up, vous participerez au développement web et à l’intégration HTML/CSS d’applications mobiles et de sites web responsive.",
+    status: 0,
+    keywords: "web design intégration web javascript",
+    experience : "Débutant",
+    type:"Temps partiel, Intérim, Saisonnier",
+  
+  }) {
+	  recordId
+	}
+}
+
+/***********
+
+all jobs
+
+
+query{
+	JobMany{
+	  title
+	  description
+	  status
+	  keywords
+	  experience
+	  type
+	  updated_at
+	  created_at
+	}
+}
+
+
+
+
+/************
+
+job by id
+
+query{
+	JobById(_id:"60b027a2f1880829ac94e7dc") {
+	  title
+	  description
+	  status
+	  keywords
+	  experience
+	  type
+	  updated_at
+	  created_at
+	}
+}
+
